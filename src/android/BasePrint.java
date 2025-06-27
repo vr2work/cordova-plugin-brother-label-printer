@@ -187,9 +187,9 @@ public abstract class BasePrint {
                     mPrinterInfo.labelNameIndex = LabelInfo.QL700.valueOf(
                             sharedPreferences.getString("paperSize", LabelInfo.QL700.W62.toString())).ordinal();
                     mPrinterInfo.isAutoCut = Boolean.parseBoolean(sharedPreferences
-                            .getString("autoCut", TRUE));
+                            .getString("autoCut", FALSE));
                     mPrinterInfo.isCutAtEnd = Boolean
-                            .parseBoolean(sharedPreferences.getString("endCut", TRUE));
+                            .parseBoolean(sharedPreferences.getString("endCut", FALSE));
                     break;
                 case QL_1100:
                 case QL_1110NWB:
